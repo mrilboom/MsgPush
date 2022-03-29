@@ -1,0 +1,11 @@
+[Unit]
+Description=WatchTemp
+After=syslog.target
+
+[Service]
+#/usr/lib/systemd/system
+#工作目录
+WorkingDirectory=/root/Services/MsgPush
+ExecStart=bash WatchTemp.sh
+[Install]
+WantedBy=multi-user.target
